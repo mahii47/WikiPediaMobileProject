@@ -1,9 +1,7 @@
 package base;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.time.Duration;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import config.CapabilitiesManager;
@@ -21,8 +19,6 @@ public class BaseTest {
 	{
 		DesiredCapabilities caps = CapabilitiesManager.getLauncherCapabilities(UDID);
 		driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),caps);
-	
-	//	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));	
 	}
 	@AfterClass
 	public void tearDown()
