@@ -38,7 +38,14 @@ public class HomePage {
 	public void openApp(String appName) throws InterruptedException
 	{
 		By exact = By.xpath("//*[@text='"+appName+"']");
-		driver.findElement(By.id("com.android.launcher:id/branch_confirm_button")).click();
+		try
+		{
+			 driver.findElement(By.id("com.android.launcher:id/branch_confirm_button")).click();
+			 System.out.println("Clicked 'Got it'");
+		}catch(Exception e)
+		{
+			 System.out.println("'Got it' popup not displayed");
+		}
 	        driver.findElementByAndroidUIAutomator(
 	        	    "new UiScrollable(new UiSelector().scrollable(true)).scrollTextIntoView(\"Wikipedia\")"
 	        	);
