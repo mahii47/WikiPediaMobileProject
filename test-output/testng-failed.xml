@@ -3,13 +3,13 @@
 <suite name="Failed suite [Wikipedia Automation Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Wikipedia Tests(failed)">
     <classes>
-      <class name="tests.WikipediaSearchTest">
+      <class name="tests.ArticleTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="search"/>
+          <include name="article"/>
         </methods>
-      </class> <!-- tests.WikipediaSearchTest -->
+      </class> <!-- tests.ArticleTest -->
     </classes>
   </test> <!-- Wikipedia Tests(failed) -->
 </suite> <!-- Failed suite [Wikipedia Automation Suite] -->

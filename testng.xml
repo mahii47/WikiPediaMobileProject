@@ -7,6 +7,7 @@
         <classes>
             <class name="tests.HomeTest"/>
             <class name="tests.WikipediaSearchTest"/>
+            <class name="tests.ArticleTest"/>
         </classes>
     </test>
 

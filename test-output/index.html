@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,6 +101,11 @@
                       <a href="#" panel-name="suite-Wikipedia_Automation_Suite" class="show-methods passed suite-Wikipedia_Automation_Suite"> (show)</a> <!-- show-methods passed suite-Wikipedia_Automation_Suite -->
                     </span>
                     <div class="method-list-content passed suite-Wikipedia_Automation_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Wikipedia_Automation_Suite" title="tests.ArticleTest" class="method navigator-link" hash-for-method="article">article</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Wikipedia_Automation_Suite" title="tests.HomeTest" class="method navigator-link" hash-for-method="openApp">openApp</a> <!-- method navigator-link -->
@@ -126,14 +131,14 @@
           <div class="suite-Wikipedia_Automation_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.WikipediaSearchTest</span>
+              <span class="class-name">tests.ArticleTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="search">
-                  </a> <!-- search -->
-                  <span class="method-name">search</span>
+                  <a name="article">
+                  </a> <!-- article -->
+                  <span class="method-name">article</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -153,6 +158,21 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Wikipedia_Automation_Suite-class-passed -->
+          <div class="suite-Wikipedia_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.WikipediaSearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="search">
+                  </a> <!-- search -->
+                  <span class="method-name">search</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Wikipedia_Automation_Suite-class-passed -->
         </div> <!-- panel Wikipedia_Automation_Suite -->
         <div panel-name="test-xml-Wikipedia_Automation_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -167,6 +187,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;tests.HomeTest&quot;/&gt;
       &lt;class name=&quot;tests.WikipediaSearchTest&quot;/&gt;
+      &lt;class name=&quot;tests.ArticleTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Wikipedia Tests --&gt;
 &lt;/suite&gt; &lt;!-- Wikipedia Automation Suite --&gt;
@@ -180,7 +201,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Wikipedia Tests (2 classes)</span>
+                <span class="test-name">Wikipedia Tests (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -206,20 +227,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'openApp')
-data.setCell(0, 2, 'tests.HomeTest')
-data.setCell(0, 3, 15178);
+data.setCell(0, 1, 'article')
+data.setCell(0, 2, 'tests.ArticleTest')
+data.setCell(0, 3, 98969);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'search')
-data.setCell(1, 2, 'tests.WikipediaSearchTest')
-data.setCell(1, 3, 10965);
+data.setCell(1, 1, 'openApp')
+data.setCell(1, 2, 'tests.HomeTest')
+data.setCell(1, 3, 12184);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'search')
+data.setCell(2, 2, 'tests.WikipediaSearchTest')
+data.setCell(2, 3, 10936);
 window.suiteTableData['Wikipedia_Automation_Suite']= { tableData: data, tableDiv: 'times-div-Wikipedia_Automation_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Wikipedia_Automation_Suite">
               </div> <!-- times-div-Wikipedia_Automation_Suite -->
             </div> <!-- times-div -->
@@ -234,9 +259,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Wikipedia_Automation_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.ArticleTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">tests.WikipediaSearchTest</span>
               <div class="ignored-methods-div">
@@ -261,21 +295,28 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">openApp</span>
-                <span class="method-start">9956 ms</span>
+                <span class="method-start">11354 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.WikipediaSearchTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">search</span>
-                <span class="method-start">25140 ms</span>
+                <span class="method-start">23551 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ArticleTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">article</span>
+                <span class="method-start">34491 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.HomeTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">36181 ms</span>
+                <span class="method-start">133540 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
