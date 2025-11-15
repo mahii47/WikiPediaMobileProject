@@ -1,25 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-15T00:27:45 IST" name="Default suite" finished-at="2025-11-15T00:28:14 IST" duration-ms="29002">
+  <suite started-at="2025-11-15T13:02:22 IST" name="Wikipedia Automation Suite" finished-at="2025-11-15T13:02:49 IST" duration-ms="26226">
     <groups>
     </groups>
-    <test started-at="2025-11-15T00:27:45 IST" name="Default test" finished-at="2025-11-15T00:28:14 IST" duration-ms="29002">
+    <test started-at="2025-11-15T13:02:22 IST" name="Wikipedia Tests" finished-at="2025-11-15T13:02:49 IST" duration-ms="26226">
+      <class name="tests.WikipediaSearchTest">
+        <test-method signature="search()[pri:0, instance:tests.WikipediaSearchTest@70325e14]" started-at="2025-11-15T13:02:38 IST" name="search" finished-at="2025-11-15T13:02:49 IST" duration-ms="10965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+      </class> <!-- tests.WikipediaSearchTest -->
       <class name="tests.HomeTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomeTest@5e5d171f]" started-at="2025-11-15T00:27:45 IST" name="setUp" finished-at="2025-11-15T00:27:59 IST" duration-ms="13868" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomeTest@7bedc48a]" started-at="2025-11-15T13:02:12 IST" name="setUp" finished-at="2025-11-15T13:02:22 IST" duration-ms="9878" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="openApp()[pri:0, instance:tests.HomeTest@5e5d171f]" started-at="2025-11-15T00:27:59 IST" name="openApp" finished-at="2025-11-15T00:28:13 IST" duration-ms="14532" status="PASS">
+        <test-method signature="openApp()[pri:0, instance:tests.HomeTest@7bedc48a]" started-at="2025-11-15T13:02:22 IST" name="openApp" finished-at="2025-11-15T13:02:38 IST" duration-ms="15178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomeTest@5e5d171f]" started-at="2025-11-15T00:28:13 IST" name="tearDown" finished-at="2025-11-15T00:28:14 IST" duration-ms="509" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomeTest@7bedc48a]" started-at="2025-11-15T13:02:49 IST" name="tearDown" finished-at="2025-11-15T13:02:49 IST" duration-ms="388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.HomeTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Wikipedia Tests -->
+  </suite> <!-- Wikipedia Automation Suite -->
 </testng-results>
