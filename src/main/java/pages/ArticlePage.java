@@ -40,6 +40,4 @@ public class ArticlePage {
 		MobileElement contentOptions = waitUtil.waitForVisible(contentOption);
 		contentOptions.click();
 	}
-	
-	
 }

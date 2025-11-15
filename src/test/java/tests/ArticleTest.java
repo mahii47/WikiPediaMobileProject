@@ -13,7 +13,6 @@ public class ArticleTest extends BaseTest{
 			ap.scrollPage();
 			ap.contentsIcon();
 			ap.allcontainsOptions();
-			
 		}
 }
 	

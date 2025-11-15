@@ -9,11 +9,36 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Wikipedia Automation Suite</th></tr>
-<tr><td><a href="#t0">Wikipedia Tests</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">122,165</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Wikipedia Tests</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">132,318</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Wikipedia Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Wikipedia Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.ArticleTest</td><td><a href="#m0">article</a></td><td rowspan="1">1763222649256</td><td rowspan="1">98969</td></tr><tr class="passedodd"><td rowspan="1">tests.HomeTest</td><td><a href="#m1">openApp</a></td><td rowspan="1">1763222626119</td><td rowspan="1">12184</td></tr><tr class="passedeven"><td rowspan="1">tests.WikipediaSearchTest</td><td><a href="#m2">search</a></td><td rowspan="1">1763222638316</td><td rowspan="1">10936</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Wikipedia Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Wikipedia Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.ArticleTest</td><td><a href="#m0">article</a></td><td rowspan="1">1763230099654</td><td rowspan="1">109942</td></tr><tr><th colspan="4">Wikipedia Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.HomeTest</td><td><a href="#m1">openApp</a></td><td rowspan="1">1763230077346</td><td rowspan="1">12272</td></tr><tr class="passedodd"><td rowspan="1">tests.WikipediaSearchTest</td><td><a href="#m2">search</a></td><td rowspan="1">1763230089632</td><td rowspan="1">10018</td></tr></tbody>
 </table>
-<h2>Wikipedia Tests</h2><h3 id="m0">tests.ArticleTest#article</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Wikipedia Tests</h2><h3 id="m0">tests.ArticleTest#article</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-L2UM9ODI&apos;, ip: &apos;10.20.24.237&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.android.launcher.Launcher, appPackage: com.android.launcher, automateName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.android.launcher.Launcher, appPackage: com.android.launcher, automateName: UiAutomator2, deviceName: AndroidDevice, ignoreHiddenApiPo;icyError: true, platformName: android, udid: T49P8X6LTG5DHE7H}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3092, deviceName: T49P8X6LTG5DHE7H, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: T49P8X6LTG5DHE7H, ignoreHiddenApiPo;icyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 110, takesScreenshot: true, udid: T49P8X6LTG5DHE7H, viewportRect: {height: 2180, left: 0, top: 110, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 2541b619-0c9d-46f4-9417-6225ec310103
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true)).scrollTextIntoView(&quot;Hindi&quot;)}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at pages.ArticlePage.language(ArticlePage.java:52)
+	at tests.ArticleTest.article(ArticleTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">tests.HomeTest#openApp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">tests.WikipediaSearchTest#search</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>

@@ -1,33 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-15T21:33:46 IST" name="Wikipedia Automation Suite" finished-at="2025-11-15T21:35:48 IST" duration-ms="122165">
+  <suite started-at="2025-11-15T23:37:57 IST" name="Wikipedia Automation Suite" finished-at="2025-11-15T23:40:09 IST" duration-ms="132318">
     <groups>
     </groups>
-    <test started-at="2025-11-15T21:33:46 IST" name="Wikipedia Tests" finished-at="2025-11-15T21:35:48 IST" duration-ms="122165">
+    <test started-at="2025-11-15T23:37:57 IST" name="Wikipedia Tests" finished-at="2025-11-15T23:40:09 IST" duration-ms="132318">
       <class name="tests.ArticleTest">
-        <test-method signature="article()[pri:0, instance:tests.ArticleTest@20d525]" started-at="2025-11-15T21:34:09 IST" name="article" finished-at="2025-11-15T21:35:48 IST" duration-ms="98969" status="PASS">
+        <test-method signature="article()[pri:0, instance:tests.ArticleTest@20d525]" started-at="2025-11-15T23:38:19 IST" name="article" finished-at="2025-11-15T23:40:09 IST" duration-ms="109942" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-L2UM9ODI', ip: '10.20.24.237', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.android.launcher.Launcher, appPackage: com.android.launcher, automateName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.android.launcher.Launcher, appPackage: com.android.launcher, automateName: UiAutomator2, deviceName: AndroidDevice, ignoreHiddenApiPo;icyError: true, platformName: android, udid: T49P8X6LTG5DHE7H}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3092, deviceName: T49P8X6LTG5DHE7H, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: T49P8X6LTG5DHE7H, ignoreHiddenApiPo;icyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 110, takesScreenshot: true, udid: T49P8X6LTG5DHE7H, viewportRect: {height: 2180, left: 0, top: 110, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 2541b619-0c9d-46f4-9417-6225ec310103
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true)).scrollTextIntoView("Hindi")}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-L2UM9ODI', ip: '10.20.24.237', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.android.launcher.Launcher, appPackage: com.android.launcher, automateName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.android.launcher.Launcher, appPackage: com.android.launcher, automateName: UiAutomator2, deviceName: AndroidDevice, ignoreHiddenApiPo;icyError: true, platformName: android, udid: T49P8X6LTG5DHE7H}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3092, deviceName: T49P8X6LTG5DHE7H, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: T49P8X6LTG5DHE7H, ignoreHiddenApiPo;icyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 110, takesScreenshot: true, udid: T49P8X6LTG5DHE7H, viewportRect: {height: 2180, left: 0, top: 110, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 2541b619-0c9d-46f4-9417-6225ec310103
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true)).scrollTextIntoView("Hindi")}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+at pages.ArticlePage.language(ArticlePage.java:52)
+at tests.ArticleTest.article(ArticleTest.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- article -->
       </class> <!-- tests.ArticleTest -->
       <class name="tests.WikipediaSearchTest">
-        <test-method signature="search()[pri:0, instance:tests.WikipediaSearchTest@7c9d8e2]" started-at="2025-11-15T21:33:58 IST" name="search" finished-at="2025-11-15T21:34:09 IST" duration-ms="10936" status="PASS">
+        <test-method signature="search()[pri:0, instance:tests.WikipediaSearchTest@7c9d8e2]" started-at="2025-11-15T23:38:09 IST" name="search" finished-at="2025-11-15T23:38:19 IST" duration-ms="10018" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
       </class> <!-- tests.WikipediaSearchTest -->
       <class name="tests.HomeTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomeTest@55b0dcab]" started-at="2025-11-15T21:33:34 IST" name="setUp" finished-at="2025-11-15T21:33:46 IST" duration-ms="11296" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomeTest@55b0dcab]" started-at="2025-11-15T23:37:45 IST" name="setUp" finished-at="2025-11-15T23:37:57 IST" duration-ms="11717" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="openApp()[pri:0, instance:tests.HomeTest@55b0dcab]" started-at="2025-11-15T21:33:46 IST" name="openApp" finished-at="2025-11-15T21:33:58 IST" duration-ms="12184" status="PASS">
+        <test-method signature="openApp()[pri:0, instance:tests.HomeTest@55b0dcab]" started-at="2025-11-15T23:37:57 IST" name="openApp" finished-at="2025-11-15T23:38:09 IST" duration-ms="12272" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomeTest@55b0dcab]" started-at="2025-11-15T21:35:48 IST" name="tearDown" finished-at="2025-11-15T21:35:48 IST" duration-ms="382" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomeTest@55b0dcab]" started-at="2025-11-15T23:40:09 IST" name="tearDown" finished-at="2025-11-15T23:40:10 IST" duration-ms="452" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
