@@ -1,37 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-16T22:31:43 IST" name="Wikipedia Automation Suite" finished-at="2025-11-16T22:33:36 IST" duration-ms="113529">
+  <suite started-at="2025-11-16T23:53:39 IST" name="Wikipedia-NegativeTests" finished-at="2025-11-16T23:56:59 IST" duration-ms="199794">
     <groups>
     </groups>
-    <test started-at="2025-11-16T22:31:43 IST" name="Wikipedia Tests" finished-at="2025-11-16T22:33:36 IST" duration-ms="113529">
-      <class name="tests.ArticleTest">
-        <test-method signature="verifyArticleNavigationAndReaderSettings()[pri:0, instance:tests.ArticleTest@20d525]" started-at="2025-11-16T22:32:06 IST" name="verifyArticleNavigationAndReaderSettings" finished-at="2025-11-16T22:33:36 IST" duration-ms="89682" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyArticleNavigationAndReaderSettings -->
-      </class> <!-- tests.ArticleTest -->
-      <class name="tests.WikipediaSearchTest">
-        <test-method signature="search()[pri:0, instance:tests.WikipediaSearchTest@7c9d8e2]" started-at="2025-11-16T22:31:56 IST" name="search" finished-at="2025-11-16T22:32:06 IST" duration-ms="10277" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- search -->
-      </class> <!-- tests.WikipediaSearchTest -->
-      <class name="tests.HomeTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomeTest@55b0dcab]" started-at="2025-11-16T22:31:32 IST" name="setUp" finished-at="2025-11-16T22:31:43 IST" duration-ms="10822" status="PASS">
+    <test started-at="2025-11-16T23:53:39 IST" name="Negative Search Test" finished-at="2025-11-16T23:56:59 IST" duration-ms="199794">
+      <class name="negativetests.NegativeSearchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:53:39 IST" name="setUp" finished-at="2025-11-16T23:54:01 IST" duration-ms="22019" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="openApp()[pri:0, instance:tests.HomeTest@55b0dcab]" started-at="2025-11-16T22:31:43 IST" name="openApp" finished-at="2025-11-16T22:31:56 IST" duration-ms="13460" status="PASS">
+        <test-method signature="searchInvalidText()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:54:01 IST" name="searchInvalidText" finished-at="2025-11-16T23:54:17 IST" duration-ms="16313" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomeTest@55b0dcab]" started-at="2025-11-16T22:33:36 IST" name="tearDown" finished-at="2025-11-16T22:33:37 IST" duration-ms="540" status="PASS">
+        </test-method> <!-- searchInvalidText -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:54:17 IST" name="tearDown" finished-at="2025-11-16T23:54:20 IST" duration-ms="2047" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.HomeTest -->
-    </test> <!-- Wikipedia Tests -->
-  </suite> <!-- Wikipedia Automation Suite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:54:20 IST" name="setUp" finished-at="2025-11-16T23:54:40 IST" duration-ms="20630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchSpecialCharacters()[pri:1, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:54:40 IST" name="searchSpecialCharacters" finished-at="2025-11-16T23:54:57 IST" duration-ms="17254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchSpecialCharacters -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:54:57 IST" name="tearDown" finished-at="2025-11-16T23:54:59 IST" duration-ms="2052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:54:59 IST" name="setUp" finished-at="2025-11-16T23:55:20 IST" duration-ms="20739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchVeryLongText()[pri:2, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:55:20 IST" name="searchVeryLongText" finished-at="2025-11-16T23:55:36 IST" duration-ms="16260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchVeryLongText -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:55:36 IST" name="tearDown" finished-at="2025-11-16T23:55:39 IST" duration-ms="2157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:55:39 IST" name="setUp" finished-at="2025-11-16T23:56:01 IST" duration-ms="22518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchEmptyInput()[pri:3, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:56:01 IST" name="searchEmptyInput" finished-at="2025-11-16T23:56:18 IST" duration-ms="17132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchEmptyInput -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:56:18 IST" name="tearDown" finished-at="2025-11-16T23:56:20 IST" duration-ms="1585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:56:20 IST" name="setUp" finished-at="2025-11-16T23:56:41 IST" duration-ms="21282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchSpacesOnly()[pri:4, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:56:41 IST" name="searchSpacesOnly" finished-at="2025-11-16T23:56:57 IST" duration-ms="16107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchSpacesOnly -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:56:57 IST" name="tearDown" finished-at="2025-11-16T23:56:59 IST" duration-ms="1612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- negativetests.NegativeSearchTest -->
+    </test> <!-- Negative Search Test -->
+  </suite> <!-- Wikipedia-NegativeTests -->
 </testng-results>
