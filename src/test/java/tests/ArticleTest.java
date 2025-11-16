@@ -7,14 +7,14 @@ import pages.ArticlePage;
 
 public class ArticleTest extends BaseTest{
 		@Test
-		public void article()
+		public void verifyArticleNavigationAndReaderSettings()
 		{
-			ArticlePage ap = new ArticlePage(driver);
-			ap.scrollPage();
-			ap.contentsIcon();
-			ap.allcontainsOptions();
-			ap.theme();
-			ap.backHomeScreen();
+			ArticlePage articlePage  = new ArticlePage(driver);
+			articlePage.scrollToTargetSection();
+	        articlePage.openTableOfContents();
+	        articlePage.selectSectionFromContents();
+	        articlePage.openAndApplyReaderTheme();
+	        articlePage.returnToHomeScreen();
 		}
 }
 	

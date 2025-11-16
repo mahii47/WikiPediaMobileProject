@@ -11,7 +11,7 @@ public class WikipediaSearchTest  extends BaseTest{
 	@Test
 	public void search() {
 		WikipediaSearchPage WikiSearchPage = new  WikipediaSearchPage(driver);
-		WikiSearchPage.searchButton();	
-		WikiSearchPage.searchArtticle("Artificial Intelligence");
+		WikiSearchPage.openSearch();	
+		WikiSearchPage.performSearch("Artificial Intelligence");
 	}
 }

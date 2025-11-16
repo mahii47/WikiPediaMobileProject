@@ -10,14 +10,14 @@ import utils.WaitUtil;
 
 public class ArticlePage {
 	
-	By content = By.xpath("//*[@text='Contents']");
-	By contentOption = By.xpath("//*[@text='History of AI']");
-	By themeicon = By.id("org.wikipedia:id/page_theme");
-	By firsttheme = By.id("org.wikipedia:id/theme_chooser_match_system_theme_switch");
-	By secondtheme = By.id("org.wikipedia:id/theme_chooser_dark_mode_dim_images_switch");
-	By theameButton = By.id("org.wikipedia:id/button_theme_dark");
-	By font = By.id("org.wikipedia:id/button_font_family_serif");
-	By read = By.id("org.wikipedia:id/theme_chooser_reading_focus_mode_switch");
+	By tocButton  = By.xpath("//*[@text='Contents']");
+	By tocSectionHistoryAI = By.xpath("//*[@text='History of AI']");
+	By themeMenuIcon = By.id("org.wikipedia:id/page_theme");
+	By matchSystemThemeToggle = By.id("org.wikipedia:id/theme_chooser_match_system_theme_switch");
+	By dimImagesToggle = By.id("org.wikipedia:id/theme_chooser_dark_mode_dim_images_switch");
+	By darkThemeButton  = By.id("org.wikipedia:id/button_theme_dark");
+	By fontStyleButton = By.id("org.wikipedia:id/button_font_family_serif");
+	By readingFocusToggle  = By.id("org.wikipedia:id/theme_chooser_reading_focus_mode_switch");
 	
 	private final AndroidDriver<MobileElement> driver;
 	private WaitUtil waitUtil;
@@ -27,7 +27,7 @@ public class ArticlePage {
 		this.driver = driver;
 		this.waitUtil = new WaitUtil(driver);
 	}
-	public void scrollPage()
+	public void scrollToTargetSection()
 	{
 		  driver.findElementByAndroidUIAutomator(
 			        "new UiScrollable(new UiSelector().scrollable(true)).scrollTextIntoView(\"GPT\")"
@@ -35,45 +35,45 @@ public class ArticlePage {
 		  		System.out.println(" ARTICLE VIEW");
 		  		System.out.println("   -Scrolled to: GPT");
 	}
-	public void contentsIcon()
+	public void openTableOfContents()
 	{
-		MobileElement contents =  waitUtil.waitForClickable(content);
+		MobileElement contents =  waitUtil.waitForClickable(tocButton);
 		contents.click();
 		System.out.println("   -Opened Table of Contents");
 	}
-	public void allcontainsOptions()
+	public void selectSectionFromContents()
 	{
 		 driver.findElementByAndroidUIAutomator(
 	        	    "new UiScrollable(new UiSelector().scrollable(true)).scrollTextIntoView(\"History of AI\")"
 	        	);
-		MobileElement contentOptions = waitUtil.waitForVisible(contentOption);
+		MobileElement contentOptions = waitUtil.waitForVisible(tocSectionHistoryAI);
 		contentOptions.click();
 		System.out.println("    -Navigated to selected section\n");
 	}
-	public void theme()
+	public void openAndApplyReaderTheme()
 	{
 		System.out.println("  READING CUSTOMIZATION");
-		MobileElement icontheme = waitUtil.waitForClickable(themeicon);
+		MobileElement icontheme = waitUtil.waitForClickable(themeMenuIcon );
 		icontheme.click();
 		System.out.println("    -Opened Theme settings");
-		MobileElement themeFirst = waitUtil.waitForClickable(firsttheme);
+		MobileElement themeFirst = waitUtil.waitForClickable(matchSystemThemeToggle );
 		themeFirst.click();
 		System.out.println("    -Applied Match System theme");
-		MobileElement themeSecond = waitUtil.waitForClickable(secondtheme);
+		MobileElement themeSecond = waitUtil.waitForClickable(dimImagesToggle);
 		themeSecond.click();	
 		System.out.println("    -Enabled image dimming");
-		MobileElement buttonTheame = waitUtil.waitForClickable(theameButton);
+		MobileElement buttonTheame = waitUtil.waitForClickable(darkThemeButton);
 		buttonTheame.click();
 		System.out.println("    -Updated Theme settings");
-		MobileElement fontButton = waitUtil.waitForClickable(font);
+		MobileElement fontButton = waitUtil.waitForClickable(fontStyleButton);
 		fontButton.click();
 		System.out.println("    -Updated font settings");
-		MobileElement readmode = waitUtil.waitForClickable(read);
+		MobileElement readmode = waitUtil.waitForClickable(readingFocusToggle );
 		readmode.click();
 		System.out.println("    -Activated reading-focus mode\n");
 		driver.navigate().back();
 	}
-	public void backHomeScreen()
+	public void returnToHomeScreen()
 	{
 		driver.terminateApp("org.wikipedia");
 		driver.pressKey(new KeyEvent(AndroidKey.HOME));

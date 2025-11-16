@@ -9,7 +9,7 @@ public class HomeTest extends BaseTest {
 	public void openApp() throws InterruptedException
 	{
 		HomePage home = new HomePage(driver);
-		home.openAppDrawer();
-		home.openApp("Wikipedia");	
+		home.swipeUpToOpenAppDrawer();
+		home.launchApplication("Wikipedia");	
 	}
 }

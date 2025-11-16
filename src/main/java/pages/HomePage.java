@@ -18,7 +18,7 @@ public class HomePage {
 		this.driver = driver;
 		this.waitUtil = new WaitUtil(driver);
 	}
-	public void openAppDrawer()
+	public void swipeUpToOpenAppDrawer()
 	{
 	  	int width = driver.manage().window().getSize().width / 2;
         int height = driver.manage().window().getSize().height;
@@ -36,7 +36,7 @@ public class HomePage {
         System.out.println(" HOME SCREEN");
         System.out.println("   -App drawer launched");
 	}
-	public void openApp(String appName) throws InterruptedException
+	public void launchApplication(String appName) throws InterruptedException
 	{
 		By exact = By.xpath("//*[@text='"+appName+"']");
 		try

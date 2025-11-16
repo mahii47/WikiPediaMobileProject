@@ -8,10 +8,10 @@ import utils.WaitUtil;
 
 public class WikipediaSearchPage {
 	
-	By searchbutton = By.xpath("//*[@text='Search']");
-	By searchContainer = By.id("org.wikipedia:id/search_card");
-	By searchText = By.id("org.wikipedia:id/search_src_text");
-	By recommendationoption = By.xpath("(//android.view.ViewGroup[@clickable='true'])[1]"); 
+	By searchButton = By.xpath("//*[@text='Search']");
+	By searchInputContainer = By.id("org.wikipedia:id/search_card");
+	By searchTextBox = By.id("org.wikipedia:id/search_src_text");
+	By firstSuggestionOption = By.xpath("(//android.view.ViewGroup[@clickable='true'])[1]"); 
 	
 	private WaitUtil waitUtil;
 	private AndroidDriver<MobileElement> driver;
@@ -21,22 +21,22 @@ public class WikipediaSearchPage {
 		this.driver = driver;
 		this.waitUtil = new WaitUtil(driver);
 	}
-	public void searchButton()
+	public void openSearch()
 	{
-		MobileElement searchoption = waitUtil.waitForVisible(searchbutton);
-		searchoption.click();
+		MobileElement searchOption = waitUtil.waitForVisible(searchButton);
+		searchOption.click();
 		System.out.println(" SEARCH MODULE");
 		System.out.println("    -Search bar opened");
 	}
-	public void searchArtticle(String text)
+	public void performSearch(String text)
 	{
-		MobileElement searchCard = waitUtil.waitForClickable(searchContainer);
+		MobileElement searchCard = waitUtil.waitForClickable(searchInputContainer);
 		searchCard.click();
 		System.out.println("    -Search field activated");
-		MobileElement searchQuery = waitUtil.waitForClickable(searchText);
+		MobileElement searchQuery = waitUtil.waitForClickable(searchTextBox);
 		searchQuery.sendKeys(text);
 		System.out.println("    -Query entered: Artificial Intelligence");
-		MobileElement firstOption = waitUtil.waitForClickable(recommendationoption);
+		MobileElement firstOption = waitUtil.waitForClickable(firstSuggestionOption);
 		firstOption.click();
 		System.out.println("    -First suggestion selected\n");
 	}
