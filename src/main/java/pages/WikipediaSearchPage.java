@@ -1,8 +1,6 @@
 package pages;
-
 import org.openqa.selenium.By;
 import org.testng.Assert;
-
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import utils.WaitUtil;
