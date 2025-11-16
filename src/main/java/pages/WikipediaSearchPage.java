@@ -57,5 +57,4 @@ public class WikipediaSearchPage {
 		System.out.println("Actual result is"+result);
 		System.out.println("Expected result is"+text);
 	}
-	
 }

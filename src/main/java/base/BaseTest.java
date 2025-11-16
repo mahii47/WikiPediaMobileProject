@@ -19,7 +19,6 @@ import pages.HomePage;
 public class BaseTest {
 	
 	protected static AndroidDriver<MobileElement> driver;
-	
 	private final String UDID = "T49P8X6LTG5DHE7H";
 	
 	@BeforeMethod(alwaysRun = true)
