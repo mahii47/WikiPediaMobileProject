@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Wikipedia-NegativeTests">
+    <test name="Negative Search Test">
+        <classes>
+     	    <class name="tests.HomeTest"/>
+            <class name="negativetests.NegativeSearchTest"/>
+        </classes>
+    </test>
+</suite>

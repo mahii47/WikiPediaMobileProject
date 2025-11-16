@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
@@ -12,6 +13,7 @@ public class WikipediaSearchPage {
 	By searchInputContainer = By.id("org.wikipedia:id/search_card");
 	By searchTextBox = By.id("org.wikipedia:id/search_src_text");
 	By firstSuggestionOption = By.xpath("(//android.view.ViewGroup[@clickable='true'])[1]"); 
+	By searchSuggestion = By.id("org.wikipedia:id/results_text");
 	
 	private WaitUtil waitUtil;
 	private AndroidDriver<MobileElement> driver;
@@ -35,9 +37,25 @@ public class WikipediaSearchPage {
 		System.out.println("    -Search field activated");
 		MobileElement searchQuery = waitUtil.waitForClickable(searchTextBox);
 		searchQuery.sendKeys(text);
-		System.out.println("    -Query entered: Artificial Intelligence");
+		System.out.println("    -Query entered:"+text+"");
+		try
+		{
 		MobileElement firstOption = waitUtil.waitForClickable(firstSuggestionOption);
 		firstOption.click();
 		System.out.println("    -First suggestion selected\n");
+		}
+		catch(Exception e)
+		{
+			
+		}
 	}
+	public void verifyNoResultsDisplayed(String text)
+	{
+		MobileElement searchResult = waitUtil.waitForVisible(searchSuggestion);
+		String result = searchResult.getText();
+		Assert.assertEquals(result, text);
+		System.out.println("Actual result is"+result);
+		System.out.println("Expected result is"+text);
+	}
+	
 }
