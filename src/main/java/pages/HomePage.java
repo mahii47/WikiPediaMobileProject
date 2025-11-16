@@ -32,8 +32,9 @@ public class HomePage {
               .moveTo(PointOption.point(width, endY))
               .release()
               .perform();
-        System.out.println("App Drawer Opened Successfully");
-        
+        System.out.println("====================WIKIPEDIA AUTOMATION RUN====================\n");
+        System.out.println(" HOME SCREEN");
+        System.out.println("   -App drawer launched");
 	}
 	public void openApp(String appName) throws InterruptedException
 	{
@@ -41,7 +42,7 @@ public class HomePage {
 		try
 		{
 			 driver.findElement(By.id("com.android.launcher:id/branch_confirm_button")).click();
-			 System.out.println("Clicked 'Got it'");
+			 System.out.println("   -Onboarding popup dismissed\n");
 		}catch(Exception e)
 		{
 			 System.out.println("'Got it' popup not displayed");
@@ -51,6 +52,7 @@ public class HomePage {
 	        	);
 		MobileElement appIcon = waitUtil.waitForVisible(exact);
 		appIcon.click();
-		System.out.println(appName + " App Opened (Exact)");
+		System.out.println("  WIKIPEDIA APP");
+		System.out.println(appName +"-App opened successfully\n");
 	}
 }

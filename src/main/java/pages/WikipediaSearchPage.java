@@ -11,7 +11,6 @@ public class WikipediaSearchPage {
 	By searchbutton = By.xpath("//*[@text='Search']");
 	By searchContainer = By.id("org.wikipedia:id/search_card");
 	By searchText = By.id("org.wikipedia:id/search_src_text");
-	
 	By recommendationoption = By.xpath("(//android.view.ViewGroup[@clickable='true'])[1]"); 
 	
 	private WaitUtil waitUtil;
@@ -26,18 +25,19 @@ public class WikipediaSearchPage {
 	{
 		MobileElement searchoption = waitUtil.waitForVisible(searchbutton);
 		searchoption.click();
-		System.out.println("Search button is clicked");
+		System.out.println(" SEARCH MODULE");
+		System.out.println("    -Search bar opened");
 	}
 	public void searchArtticle(String text)
 	{
 		MobileElement searchCard = waitUtil.waitForClickable(searchContainer);
 		searchCard.click();
-		System.out.println("Search container opened");
+		System.out.println("    -Search field activated");
 		MobileElement searchQuery = waitUtil.waitForClickable(searchText);
 		searchQuery.sendKeys(text);
-		System.out.println("Search Article");
+		System.out.println("    -Query entered: Artificial Intelligence");
 		MobileElement firstOption = waitUtil.waitForClickable(recommendationoption);
 		firstOption.click();
-		System.out.println("First Article clicked");
+		System.out.println("    -First suggestion selected\n");
 	}
 }
