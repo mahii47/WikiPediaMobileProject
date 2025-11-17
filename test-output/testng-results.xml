@@ -2,68 +2,68 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-16T23:53:39 IST" name="Wikipedia-NegativeTests" finished-at="2025-11-16T23:56:59 IST" duration-ms="199794">
+  <suite started-at="2025-11-17T16:51:13 IST" name="Wikipedia-NegativeTests" finished-at="2025-11-17T16:54:52 IST" duration-ms="218833">
     <groups>
     </groups>
-    <test started-at="2025-11-16T23:53:39 IST" name="Negative Search Test" finished-at="2025-11-16T23:56:59 IST" duration-ms="199794">
+    <test started-at="2025-11-17T16:51:13 IST" name="Negative Search Test" finished-at="2025-11-17T16:54:52 IST" duration-ms="218833">
       <class name="negativetests.NegativeSearchTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:53:39 IST" name="setUp" finished-at="2025-11-16T23:54:01 IST" duration-ms="22019" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:51:13 IST" name="setUp" finished-at="2025-11-17T16:51:39 IST" duration-ms="25994" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchInvalidText()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:54:01 IST" name="searchInvalidText" finished-at="2025-11-16T23:54:17 IST" duration-ms="16313" status="PASS">
+        <test-method signature="searchInvalidText()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:51:39 IST" name="searchInvalidText" finished-at="2025-11-17T16:51:57 IST" duration-ms="18240" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchInvalidText -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:54:17 IST" name="tearDown" finished-at="2025-11-16T23:54:20 IST" duration-ms="2047" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:51:57 IST" name="tearDown" finished-at="2025-11-17T16:51:59 IST" duration-ms="2223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:54:20 IST" name="setUp" finished-at="2025-11-16T23:54:40 IST" duration-ms="20630" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:51:59 IST" name="setUp" finished-at="2025-11-17T16:52:22 IST" duration-ms="22539" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchSpecialCharacters()[pri:1, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:54:40 IST" name="searchSpecialCharacters" finished-at="2025-11-16T23:54:57 IST" duration-ms="17254" status="PASS">
+        <test-method signature="searchSpecialCharacters()[pri:1, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:52:22 IST" name="searchSpecialCharacters" finished-at="2025-11-17T16:52:40 IST" duration-ms="18195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchSpecialCharacters -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:54:57 IST" name="tearDown" finished-at="2025-11-16T23:54:59 IST" duration-ms="2052" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:52:40 IST" name="tearDown" finished-at="2025-11-17T16:52:43 IST" duration-ms="2397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:54:59 IST" name="setUp" finished-at="2025-11-16T23:55:20 IST" duration-ms="20739" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:52:43 IST" name="setUp" finished-at="2025-11-17T16:53:08 IST" duration-ms="25397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchVeryLongText()[pri:2, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:55:20 IST" name="searchVeryLongText" finished-at="2025-11-16T23:55:36 IST" duration-ms="16260" status="PASS">
+        <test-method signature="searchVeryLongText()[pri:2, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:53:08 IST" name="searchVeryLongText" finished-at="2025-11-17T16:53:25 IST" duration-ms="16919" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchVeryLongText -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:55:36 IST" name="tearDown" finished-at="2025-11-16T23:55:39 IST" duration-ms="2157" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:53:25 IST" name="tearDown" finished-at="2025-11-17T16:53:27 IST" duration-ms="1840" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:55:39 IST" name="setUp" finished-at="2025-11-16T23:56:01 IST" duration-ms="22518" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:53:27 IST" name="setUp" finished-at="2025-11-17T16:53:50 IST" duration-ms="23222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchEmptyInput()[pri:3, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:56:01 IST" name="searchEmptyInput" finished-at="2025-11-16T23:56:18 IST" duration-ms="17132" status="PASS">
+        <test-method signature="searchEmptyInput()[pri:3, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:53:50 IST" name="searchEmptyInput" finished-at="2025-11-17T16:54:07 IST" duration-ms="17137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchEmptyInput -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:56:18 IST" name="tearDown" finished-at="2025-11-16T23:56:20 IST" duration-ms="1585" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:54:07 IST" name="tearDown" finished-at="2025-11-17T16:54:09 IST" duration-ms="1642" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:56:20 IST" name="setUp" finished-at="2025-11-16T23:56:41 IST" duration-ms="21282" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:54:09 IST" name="setUp" finished-at="2025-11-17T16:54:33 IST" duration-ms="24232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchSpacesOnly()[pri:4, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:56:41 IST" name="searchSpacesOnly" finished-at="2025-11-16T23:56:57 IST" duration-ms="16107" status="PASS">
+        <test-method signature="searchSpacesOnly()[pri:4, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:54:33 IST" name="searchSpacesOnly" finished-at="2025-11-17T16:54:50 IST" duration-ms="17123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchSpacesOnly -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-16T23:56:57 IST" name="tearDown" finished-at="2025-11-16T23:56:59 IST" duration-ms="1612" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:54:50 IST" name="tearDown" finished-at="2025-11-17T16:54:52 IST" duration-ms="1627" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -2,10 +2,11 @@ package tests;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
+import base.RegressionBaseTest;
 import pages.ArticlePage;
 
 
-public class ArticleTest extends BaseTest{
+public class ArticleTest extends RegressionBaseTest{
 		@Test
 		public void verifyArticleNavigationAndReaderSettings()
 		{

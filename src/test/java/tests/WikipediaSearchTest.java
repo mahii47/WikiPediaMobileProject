@@ -1,12 +1,9 @@
 package tests;
-
 import org.testng.annotations.Test;
-
-
-import base.BaseTest;
+import base.RegressionBaseTest;
 import pages.WikipediaSearchPage;
 
-public class WikipediaSearchTest  extends BaseTest{
+public class WikipediaSearchTest  extends RegressionBaseTest{
 	
 	@Test
 	public void search() {
