@@ -1,73 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-17T16:51:13 IST" name="Wikipedia-NegativeTests" finished-at="2025-11-17T16:54:52 IST" duration-ms="218833">
+  <suite started-at="2025-11-17T17:33:02 IST" name="Interrupt-WiFi-Test" finished-at="2025-11-17T17:33:20 IST" duration-ms="18122">
     <groups>
     </groups>
-    <test started-at="2025-11-17T16:51:13 IST" name="Negative Search Test" finished-at="2025-11-17T16:54:52 IST" duration-ms="218833">
-      <class name="negativetests.NegativeSearchTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:51:13 IST" name="setUp" finished-at="2025-11-17T16:51:39 IST" duration-ms="25994" status="PASS">
+    <test started-at="2025-11-17T17:33:02 IST" name="WiFi Interruption Test" finished-at="2025-11-17T17:33:20 IST" duration-ms="18122">
+      <class name="negativetests.InterruptTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.InterruptTest@41a2befb]" started-at="2025-11-17T17:32:39 IST" name="setUp" finished-at="2025-11-17T17:33:02 IST" duration-ms="23286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchInvalidText()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:51:39 IST" name="searchInvalidText" finished-at="2025-11-17T16:51:57 IST" duration-ms="18240" status="PASS">
+        <test-method signature="testWifiInterruption()[pri:0, instance:negativetests.InterruptTest@41a2befb]" started-at="2025-11-17T17:33:02 IST" name="testWifiInterruption" finished-at="2025-11-17T17:33:20 IST" duration-ms="18061" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchInvalidText -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:51:57 IST" name="tearDown" finished-at="2025-11-17T16:51:59 IST" duration-ms="2223" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:51:59 IST" name="setUp" finished-at="2025-11-17T16:52:22 IST" duration-ms="22539" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="searchSpecialCharacters()[pri:1, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:52:22 IST" name="searchSpecialCharacters" finished-at="2025-11-17T16:52:40 IST" duration-ms="18195" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchSpecialCharacters -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:52:40 IST" name="tearDown" finished-at="2025-11-17T16:52:43 IST" duration-ms="2397" status="PASS">
+        </test-method> <!-- testWifiInterruption -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.InterruptTest@41a2befb]" started-at="2025-11-17T17:33:20 IST" name="tearDown" finished-at="2025-11-17T17:33:22 IST" duration-ms="1643" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:52:43 IST" name="setUp" finished-at="2025-11-17T16:53:08 IST" duration-ms="25397" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="searchVeryLongText()[pri:2, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:53:08 IST" name="searchVeryLongText" finished-at="2025-11-17T16:53:25 IST" duration-ms="16919" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchVeryLongText -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:53:25 IST" name="tearDown" finished-at="2025-11-17T16:53:27 IST" duration-ms="1840" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:53:27 IST" name="setUp" finished-at="2025-11-17T16:53:50 IST" duration-ms="23222" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="searchEmptyInput()[pri:3, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:53:50 IST" name="searchEmptyInput" finished-at="2025-11-17T16:54:07 IST" duration-ms="17137" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchEmptyInput -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:54:07 IST" name="tearDown" finished-at="2025-11-17T16:54:09 IST" duration-ms="1642" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:54:09 IST" name="setUp" finished-at="2025-11-17T16:54:33 IST" duration-ms="24232" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="searchSpacesOnly()[pri:4, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:54:33 IST" name="searchSpacesOnly" finished-at="2025-11-17T16:54:50 IST" duration-ms="17123" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchSpacesOnly -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@40005471]" started-at="2025-11-17T16:54:50 IST" name="tearDown" finished-at="2025-11-17T16:54:52 IST" duration-ms="1627" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- negativetests.NegativeSearchTest -->
-    </test> <!-- Negative Search Test -->
-  </suite> <!-- Wikipedia-NegativeTests -->
+      </class> <!-- negativetests.InterruptTest -->
+    </test> <!-- WiFi Interruption Test -->
+  </suite> <!-- Interrupt-WiFi-Test -->
 </testng-results>
