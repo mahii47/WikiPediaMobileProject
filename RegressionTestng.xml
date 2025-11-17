@@ -2,7 +2,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="Regression Wikipedia Automation Suite">
-
+<listeners>
+    <listener class-name="listeners.TestListener"/>
+</listeners>
     <test name=" Regression Wikipedia Tests">
         <classes>
            <class name="tests.WikipediaSearchTest"/>

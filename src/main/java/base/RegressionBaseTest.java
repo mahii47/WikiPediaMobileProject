@@ -12,7 +12,7 @@ import io.appium.java_client.android.nativekey.KeyEvent;
 import pages.HomePage;
 
 public class RegressionBaseTest {
-	protected static AndroidDriver<MobileElement> driver;
+	public static AndroidDriver<MobileElement> driver;
 	private final String UDID = "T49P8X6LTG5DHE7H";
 	
 	@BeforeSuite(alwaysRun = true)
@@ -29,7 +29,7 @@ public class RegressionBaseTest {
 	{
 		driver.terminateApp("org.wikipedia");
 		driver.pressKey(new KeyEvent(AndroidKey.HOME));
-		System.out.println("==================== TEST FINISHED: TEST PASS ====================");
+		System.out.println("==================== TEST FINISHED:====================");
 		if(driver!=null)
 		{
 			driver.quit();

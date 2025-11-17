@@ -18,7 +18,7 @@ import pages.HomePage;
 
 public class BaseTest {
 	
-	protected static AndroidDriver<MobileElement> driver;
+	public static AndroidDriver<MobileElement> driver;
 	private final String UDID = "T49P8X6LTG5DHE7H";
 	
 	@BeforeMethod(alwaysRun = true)
@@ -35,7 +35,7 @@ public class BaseTest {
 	{
 		driver.terminateApp("org.wikipedia");
 		driver.pressKey(new KeyEvent(AndroidKey.HOME));
-		System.out.println("==================== TEST FINISHED: TEST PASS ====================");
+		System.out.println("==================== TEST FINISHED:====================");
 		if(driver!=null)
 		{
 			driver.quit();
