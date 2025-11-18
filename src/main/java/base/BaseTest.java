@@ -2,6 +2,7 @@ package base;
 import java.net.MalformedURLException;
 import java.net.URL;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -26,6 +27,7 @@ public class BaseTest {
 	{
 		DesiredCapabilities caps = CapabilitiesManager.getLauncherCapabilities(UDID);
 		driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),caps);
+		Reporter.getCurrentTestResult().getTestContext().setAttribute("driver", driver);
 		HomePage home = new HomePage(driver);
 		home.swipeUpToOpenAppDrawer();
 		home.launchApplication("Wikipedia");	

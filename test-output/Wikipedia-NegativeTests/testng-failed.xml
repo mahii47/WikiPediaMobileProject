@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Wikipedia-NegativeTests]" guice-stage="DEVELOPMENT">
   <listeners>
-    <listener class-name="listeners.TestListener"/>
+    <listener class-name="listeners.AllureTestListener"/>
   </listeners>
   <test thread-count="5" name="Negative Search Test(failed)">
     <classes>
@@ -10,7 +10,11 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="searchSpacesOnly"/>
           <include name="searchInvalidText"/>
+          <include name="searchEmptyInput"/>
+          <include name="searchSpecialCharacters"/>
+          <include name="searchVeryLongText"/>
         </methods>
       </class> <!-- negativetests.NegativeSearchTest -->
     </classes>

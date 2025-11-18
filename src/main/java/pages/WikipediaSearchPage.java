@@ -3,6 +3,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import io.qameta.allure.Step;
 import utils.WaitUtil;
 
 public class WikipediaSearchPage {
@@ -21,6 +22,7 @@ public class WikipediaSearchPage {
 		this.driver = driver;
 		this.waitUtil = new WaitUtil(driver);
 	}
+	@Step("Opening Search Module")
 	public void openSearch()
 	{
 		MobileElement searchOption = waitUtil.waitForVisible(searchButton);
@@ -28,6 +30,7 @@ public class WikipediaSearchPage {
 		System.out.println(" SEARCH MODULE");
 		System.out.println("    -Search bar opened");
 	}
+	@Step("Searching for: {text}")
 	public void performSearch(String text)
 	{
 		MobileElement searchCard = waitUtil.waitForClickable(searchInputContainer);
