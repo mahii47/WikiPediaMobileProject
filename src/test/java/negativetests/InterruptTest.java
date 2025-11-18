@@ -5,7 +5,7 @@ import base.RegressionBaseTest;
 public class InterruptTest  extends RegressionBaseTest{
 	
 	  @Test
-	    public void testWifiInterruption() throws Exception {
+	    public void testInternetInterruption() throws Exception {
 		  
 	        System.out.println("=== INTERRUPT TEST: MOBILE DATA STARTED ===");
 
@@ -19,7 +19,7 @@ public class InterruptTest  extends RegressionBaseTest{
 
 	        // Add any step here (scroll article / click section) to show the impact in video
 	       
-	        
+	     
 	        Thread.sleep(4000);
 
 	        // Turn ON Mobile Data
