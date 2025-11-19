@@ -1,152 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-19T16:39:55 IST" name="Wikipedia-NegativeTests" finished-at="2025-11-19T16:49:56 IST" duration-ms="600308">
+  <suite started-at="2025-11-19T17:05:40 IST" name="Regression Wikipedia Automation Suite" finished-at="2025-11-19T17:08:35 IST" duration-ms="175182">
     <groups>
     </groups>
-    <test started-at="2025-11-19T16:39:55 IST" name="Negative Search Test" finished-at="2025-11-19T16:49:56 IST" duration-ms="600308">
-      <class name="negativetests.NegativeSearchTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@1e16c0aa]" started-at="2025-11-19T16:39:55 IST" name="setUp" finished-at="2025-11-19T16:40:18 IST" duration-ms="22711" status="PASS">
+    <test started-at="2025-11-19T17:05:40 IST" name=" Regression Wikipedia Tests" finished-at="2025-11-19T17:08:35 IST" duration-ms="175182">
+      <class name="tests.ArticleTest">
+        <test-method signature="verifyArticleNavigationAndReaderSettings()[pri:0, instance:tests.ArticleTest@50f6ac94]" started-at="2025-11-19T17:06:37 IST" name="verifyArticleNavigationAndReaderSettings" finished-at="2025-11-19T17:08:35 IST" duration-ms="117948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyArticleNavigationAndReaderSettings -->
+      </class> <!-- tests.ArticleTest -->
+      <class name="tests.WikipediaSearchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.WikipediaSearchTest@5167f57d]" started-at="2025-11-19T17:04:35 IST" name="setUp" finished-at="2025-11-19T17:05:40 IST" duration-ms="64960" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchInvalidText()[pri:0, instance:negativetests.NegativeSearchTest@1e16c0aa]" started-at="2025-11-19T16:40:18 IST" name="searchInvalidText" finished-at="2025-11-19T16:40:39 IST" duration-ms="20908" status="PASS">
+        <test-method signature="search()[pri:0, instance:tests.WikipediaSearchTest@5167f57d]" started-at="2025-11-19T17:05:40 IST" name="search" finished-at="2025-11-19T17:06:37 IST" duration-ms="57049" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchInvalidText -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@1e16c0aa]" started-at="2025-11-19T16:40:39 IST" name="tearDown" finished-at="2025-11-19T16:40:42 IST" duration-ms="3111" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@1e16c0aa]" started-at="2025-11-19T16:40:42 IST" name="setUp" finished-at="2025-11-19T16:41:57 IST" duration-ms="74567" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="searchSpecialCharacters()[pri:1, instance:negativetests.NegativeSearchTest@1e16c0aa]" started-at="2025-11-19T16:41:57 IST" name="searchSpecialCharacters" finished-at="2025-11-19T16:42:39 IST" duration-ms="42162" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchSpecialCharacters -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@1e16c0aa]" started-at="2025-11-19T16:42:39 IST" name="tearDown" finished-at="2025-11-19T16:42:55 IST" duration-ms="16544" status="PASS">
+        </test-method> <!-- search -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.WikipediaSearchTest@5167f57d]" started-at="2025-11-19T17:08:35 IST" name="tearDown" finished-at="2025-11-19T17:08:55 IST" duration-ms="19569" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@1e16c0aa]" started-at="2025-11-19T16:42:56 IST" name="setUp" finished-at="2025-11-19T16:44:23 IST" duration-ms="87300" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="searchVeryLongText()[pri:2, instance:negativetests.NegativeSearchTest@1e16c0aa]" started-at="2025-11-19T16:44:23 IST" name="searchVeryLongText" finished-at="2025-11-19T16:44:45 IST" duration-ms="22306" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchVeryLongText -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@1e16c0aa]" started-at="2025-11-19T16:44:45 IST" name="tearDown" finished-at="2025-11-19T16:44:59 IST" duration-ms="14348" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@1e16c0aa]" started-at="2025-11-19T16:44:59 IST" name="setUp" finished-at="2025-11-19T16:46:39 IST" duration-ms="99757" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="searchEmptyInput()[pri:3, instance:negativetests.NegativeSearchTest@1e16c0aa]" started-at="2025-11-19T16:46:39 IST" name="searchEmptyInput" finished-at="2025-11-19T16:47:10 IST" duration-ms="30765" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchEmptyInput -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@1e16c0aa]" started-at="2025-11-19T16:47:10 IST" name="tearDown" finished-at="2025-11-19T16:47:19 IST" duration-ms="8524" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@1e16c0aa]" started-at="2025-11-19T16:47:19 IST" name="setUp" finished-at="2025-11-19T16:48:53 IST" duration-ms="93988" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="searchSpacesOnly()[pri:4, instance:negativetests.NegativeSearchTest@1e16c0aa]" started-at="2025-11-19T16:48:53 IST" name="searchSpacesOnly" finished-at="2025-11-19T16:49:40 IST" duration-ms="47833" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.id: org.wikipedia:id/search_src_text (tried for 10 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: org.wikipedia:id/search_src_text (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at utils.WaitUtil.waitForClickable(WaitUtil.java:25)
-at pages.WikipediaSearchPage.performSearch(WikipediaSearchPage.java:39)
-at negativetests.NegativeSearchTest.searchSpacesOnly(NegativeSearchTest.java:42)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-L2UM9ODI', ip: '10.20.24.237', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.android.launcher.Launcher, appPackage: com.android.launcher, automateName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.android.launcher.Launcher, appPackage: com.android.launcher, automateName: UiAutomator2, deviceName: AndroidDevice, ignoreHiddenApiPo;icyError: true, platformName: android, udid: T49P8X6LTG5DHE7H}, deviceApiLevel: 31, deviceManufacturer: realme, deviceModel: RMX3092, deviceName: T49P8X6LTG5DHE7H, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: T49P8X6LTG5DHE7H, ignoreHiddenApiPo;icyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 110, takesScreenshot: true, udid: T49P8X6LTG5DHE7H, viewportRect: {height: 2180, left: 0, top: 110, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 8dbe2e7c-eb60-43ca-b4e9-d7923939f014
-*** Element info: {Using=id, value=org.wikipedia:id/search_src_text}
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
-at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 29 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchSpacesOnly -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@1e16c0aa]" started-at="2025-11-19T16:49:46 IST" name="tearDown" finished-at="2025-11-19T16:49:56 IST" duration-ms="9625" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- negativetests.NegativeSearchTest -->
-    </test> <!-- Negative Search Test -->
-  </suite> <!-- Wikipedia-NegativeTests -->
+      </class> <!-- tests.WikipediaSearchTest -->
+    </test> <!--  Regression Wikipedia Tests -->
+  </suite> <!-- Regression Wikipedia Automation Suite -->
 </testng-results>
