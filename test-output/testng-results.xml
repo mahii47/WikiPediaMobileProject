@@ -1,31 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-19T17:05:40 IST" name="Regression Wikipedia Automation Suite" finished-at="2025-11-19T17:08:35 IST" duration-ms="175182">
+  <suite started-at="2025-11-19T20:20:37 IST" name="Interrupt-WiFi-Test" finished-at="2025-11-19T20:21:04 IST" duration-ms="26976">
     <groups>
     </groups>
-    <test started-at="2025-11-19T17:05:40 IST" name=" Regression Wikipedia Tests" finished-at="2025-11-19T17:08:35 IST" duration-ms="175182">
-      <class name="tests.ArticleTest">
-        <test-method signature="verifyArticleNavigationAndReaderSettings()[pri:0, instance:tests.ArticleTest@50f6ac94]" started-at="2025-11-19T17:06:37 IST" name="verifyArticleNavigationAndReaderSettings" finished-at="2025-11-19T17:08:35 IST" duration-ms="117948" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyArticleNavigationAndReaderSettings -->
-      </class> <!-- tests.ArticleTest -->
+    <test started-at="2025-11-19T20:20:37 IST" name="WiFi Interruption Test" finished-at="2025-11-19T20:21:04 IST" duration-ms="26976">
       <class name="tests.WikipediaSearchTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.WikipediaSearchTest@5167f57d]" started-at="2025-11-19T17:04:35 IST" name="setUp" finished-at="2025-11-19T17:05:40 IST" duration-ms="64960" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.WikipediaSearchTest@5167f57d]" started-at="2025-11-19T20:20:21 IST" name="setUp" finished-at="2025-11-19T20:20:37 IST" duration-ms="15951" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="search()[pri:0, instance:tests.WikipediaSearchTest@5167f57d]" started-at="2025-11-19T17:05:40 IST" name="search" finished-at="2025-11-19T17:06:37 IST" duration-ms="57049" status="PASS">
+        <test-method signature="search()[pri:0, instance:tests.WikipediaSearchTest@5167f57d]" started-at="2025-11-19T20:20:37 IST" name="search" finished-at="2025-11-19T20:20:45 IST" duration-ms="7827" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.WikipediaSearchTest@5167f57d]" started-at="2025-11-19T17:08:35 IST" name="tearDown" finished-at="2025-11-19T17:08:55 IST" duration-ms="19569" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.WikipediaSearchTest@5167f57d]" started-at="2025-11-19T20:21:04 IST" name="tearDown" finished-at="2025-11-19T20:21:06 IST" duration-ms="1470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.WikipediaSearchTest -->
-    </test> <!--  Regression Wikipedia Tests -->
-  </suite> <!-- Regression Wikipedia Automation Suite -->
+      <class name="negativetests.InterruptTest">
+        <test-method signature="turnOnInternetInterruption()[pri:0, instance:negativetests.InterruptTest@7ac296f6]" started-at="2025-11-19T20:20:45 IST" name="turnOnInternetInterruption" finished-at="2025-11-19T20:20:53 IST" duration-ms="8055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- turnOnInternetInterruption -->
+        <test-method signature="InternetInterruption()[pri:1, instance:negativetests.InterruptTest@7ac296f6]" started-at="2025-11-19T20:20:53 IST" name="InternetInterruption" finished-at="2025-11-19T20:20:54 IST" duration-ms="906" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InternetInterruption -->
+        <test-method signature="turnOffInternetInterruption()[pri:2, instance:negativetests.InterruptTest@7ac296f6]" started-at="2025-11-19T20:20:54 IST" name="turnOffInternetInterruption" finished-at="2025-11-19T20:21:04 IST" duration-ms="10032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- turnOffInternetInterruption -->
+      </class> <!-- negativetests.InterruptTest -->
+    </test> <!-- WiFi Interruption Test -->
+  </suite> <!-- Interrupt-WiFi-Test -->
 </testng-results>

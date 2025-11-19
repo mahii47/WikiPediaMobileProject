@@ -3,8 +3,8 @@
 
     <test name="WiFi Interruption Test">
         <classes>
+        	<class name="tests.WikipediaSearchTest"/>
             <class name="negativetests.InterruptTest"/>
         </classes>
     </test>
-
 </suite>
