@@ -3,13 +3,8 @@
 
 <suite name="Regression Wikipedia Automation Suite">
 <listeners>
-    <listener class-name="listeners.TestListener"/>
-</listeners>
-<listeners>
     <listener class-name="listeners.AllureTestListener"/>
 </listeners>
-
-
     <test name=" Regression Wikipedia Tests">
         <classes>
            <class name="tests.WikipediaSearchTest"/>
