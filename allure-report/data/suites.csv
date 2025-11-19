@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Nov 19 16:20:01 IST 2025","Wed Nov 19 16:20:18 IST 2025","17014","Wikipedia-NegativeTests","Negative Search Test","negativetests.NegativeSearchTest","negativetests.NegativeSearchTest","searchVeryLongText","searchVeryLongText",""
+"broken","Wed Nov 19 16:20:34 IST 2025","Wed Nov 19 16:20:46 IST 2025","11811","Wikipedia-NegativeTests","Negative Search Test","negativetests.NegativeSearchTest","negativetests.NegativeSearchTest","searchEmptyInput","searchEmptyInput",""
+"passed","Wed Nov 19 16:18:45 IST 2025","Wed Nov 19 16:19:01 IST 2025","16178","Wikipedia-NegativeTests","Negative Search Test","negativetests.NegativeSearchTest","negativetests.NegativeSearchTest","searchInvalidText","searchInvalidText",""
+"passed","Wed Nov 19 16:19:22 IST 2025","Wed Nov 19 16:19:40 IST 2025","18051","Wikipedia-NegativeTests","Negative Search Test","negativetests.NegativeSearchTest","negativetests.NegativeSearchTest","searchSpecialCharacters","searchSpecialCharacters",""
+"passed","Wed Nov 19 16:21:07 IST 2025","Wed Nov 19 16:21:24 IST 2025","17100","Wikipedia-NegativeTests","Negative Search Test","negativetests.NegativeSearchTest","negativetests.NegativeSearchTest","searchSpacesOnly","searchSpacesOnly",""

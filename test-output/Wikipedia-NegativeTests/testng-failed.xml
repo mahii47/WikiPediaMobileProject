@@ -11,10 +11,6 @@
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="searchSpacesOnly"/>
-          <include name="searchInvalidText"/>
-          <include name="searchEmptyInput"/>
-          <include name="searchSpecialCharacters"/>
-          <include name="searchVeryLongText"/>
         </methods>
       </class> <!-- negativetests.NegativeSearchTest -->
     </classes>
