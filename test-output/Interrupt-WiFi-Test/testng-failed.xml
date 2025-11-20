@@ -10,13 +10,6 @@
           <include name="InternetInterruption"/>
         </methods>
       </class> <!-- negativetests.InterruptTest -->
-      <class name="tests.WikipediaSearchTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="search"/>
-        </methods>
-      </class> <!-- tests.WikipediaSearchTest -->
     </classes>
   </test> <!-- WiFi Interruption Test(failed) -->
 </suite> <!-- Failed suite [Interrupt-WiFi-Test] -->
