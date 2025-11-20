@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.ArticleTest">
+      <class name="negativetests.InterruptTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="article"/>
+          <include name="InternetInterruption"/>
         </methods>
-      </class> <!-- tests.ArticleTest -->
+      </class> <!-- negativetests.InterruptTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
