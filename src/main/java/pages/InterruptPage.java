@@ -20,7 +20,7 @@ public class InterruptPage {
 	    }
 	     By languageMenuIcon = By.xpath("//android.widget.TextView[@content-desc=\"Language\"]");
 		
-	 	
+	     @Step("Turning OFF Internet (Mobile Data Disable)")
 		    public void turnOffInternetInterruption() throws Exception {
 				  
 		        System.out.println("=== INTERRUPT TEST: MOBILE DATA STARTED ===");
@@ -32,12 +32,14 @@ public class InterruptPage {
 		        Thread.sleep(5000);
 		        System.out.println("Mobile Data is now OFF.");
 		  }
+	     @Step("Opening Language menu (Internet OFF scenario)")
 		    public void InternetInterruption()
 			  {
 				  MobileElement iconLanguage = waitUtil.waitForClickable(languageMenuIcon);
 				  iconLanguage.click();
 				  retryButton();
 			  }
+	     @Step("Turning ON Internet (Mobile Data Enable)")
 		    public void turnOnnInternetInterruption() throws Exception
 		    {
 		        Thread.sleep(4000);
@@ -50,11 +52,13 @@ public class InterruptPage {
 
 		        System.out.println("=== INTERRUPT TEST COMPLETED ===");
 		  }
+	     @Step("Selecting Language after Internet Reconnected")
 		    public void languageSelection() throws InterruptedException
 			  {
 				  retryButton();
 				  tapLanguageOption();
 			  }
+	     @Step("Clicking Retry button")
 			  public void retryButton()
 			  {
 				  new TouchAction(driver)
@@ -63,6 +67,7 @@ public class InterruptPage {
 				  System.out.println("Retry button clicked!!");
 
 			  }
+	     @Step("Selecting language option from list")
 			  public void tapLanguageOption() throws InterruptedException {
 				    new TouchAction(driver)
 				            .tap(PointOption.point(540, 1365))
