@@ -73,7 +73,7 @@ public class InterruptPage {
 				            .tap(PointOption.point(540, 1365))
 				            .perform();
 				    System.out.println("Langauge clicked!!");
-				    Thread.sleep(5000);
+				    Thread.sleep(15000);
 				}
 
 }

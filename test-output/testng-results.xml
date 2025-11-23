@@ -1,31 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-20T21:53:23 IST" name="Interrupt-WiFi-Test" finished-at="2025-11-20T21:54:26 IST" duration-ms="63354">
+  <suite started-at="2025-11-24T02:18:48 IST" name="Wikipedia-NegativeTests" finished-at="2025-11-24T02:22:13 IST" duration-ms="204573">
     <groups>
     </groups>
-    <test started-at="2025-11-20T21:53:23 IST" name="WiFi Interruption Test" finished-at="2025-11-20T21:54:26 IST" duration-ms="63354">
-      <class name="tests.WikipediaSearchTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.WikipediaSearchTest@4b8729ff]" started-at="2025-11-20T21:52:27 IST" name="setUp" finished-at="2025-11-20T21:53:23 IST" duration-ms="56202" status="PASS">
+    <test started-at="2025-11-24T02:18:48 IST" name="Negative Search Test" finished-at="2025-11-24T02:22:13 IST" duration-ms="204573">
+      <class name="negativetests.NegativeSearchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@565f390]" started-at="2025-11-24T02:18:48 IST" name="setUp" finished-at="2025-11-24T02:19:14 IST" duration-ms="25802" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="search()[pri:0, instance:tests.WikipediaSearchTest@4b8729ff]" started-at="2025-11-20T21:53:23 IST" name="search" finished-at="2025-11-20T21:53:56 IST" duration-ms="33279" status="PASS">
+        <test-method signature="searchInvalidText()[pri:0, instance:negativetests.NegativeSearchTest@565f390]" started-at="2025-11-24T02:19:14 IST" name="searchInvalidText" finished-at="2025-11-24T02:19:31 IST" duration-ms="17200" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [No results1] but found [No results]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [No results1] but found [No results]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at pages.WikipediaSearchPage.verifyNoResultsDisplayed(WikipediaSearchPage.java:57)
+at negativetests.NegativeSearchTest.searchInvalidText(NegativeSearchTest.java:12)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- search -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.WikipediaSearchTest@4b8729ff]" started-at="2025-11-20T21:54:26 IST" name="tearDown" finished-at="2025-11-20T21:54:35 IST" duration-ms="9138" status="PASS">
+        </test-method> <!-- searchInvalidText -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@565f390]" started-at="2025-11-24T02:19:32 IST" name="tearDown" finished-at="2025-11-24T02:19:35 IST" duration-ms="2533" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.WikipediaSearchTest -->
-      <class name="negativetests.InterruptTest">
-        <test-method signature="InternetInterruption()[pri:0, instance:negativetests.InterruptTest@2bdd8394]" started-at="2025-11-20T21:53:56 IST" name="InternetInterruption" finished-at="2025-11-20T21:54:26 IST" duration-ms="29926" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@565f390]" started-at="2025-11-24T02:19:35 IST" name="setUp" finished-at="2025-11-24T02:19:54 IST" duration-ms="19513" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- InternetInterruption -->
-      </class> <!-- negativetests.InterruptTest -->
-    </test> <!-- WiFi Interruption Test -->
-  </suite> <!-- Interrupt-WiFi-Test -->
+        </test-method> <!-- setUp -->
+        <test-method signature="searchSpecialCharacters()[pri:1, instance:negativetests.NegativeSearchTest@565f390]" started-at="2025-11-24T02:19:54 IST" name="searchSpecialCharacters" finished-at="2025-11-24T02:20:11 IST" duration-ms="17227" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [No results1] but found [No results]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [No results1] but found [No results]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at pages.WikipediaSearchPage.verifyNoResultsDisplayed(WikipediaSearchPage.java:57)
+at negativetests.NegativeSearchTest.searchSpecialCharacters(NegativeSearchTest.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchSpecialCharacters -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@565f390]" started-at="2025-11-24T02:20:12 IST" name="tearDown" finished-at="2025-11-24T02:20:14 IST" duration-ms="1809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@565f390]" started-at="2025-11-24T02:20:14 IST" name="setUp" finished-at="2025-11-24T02:20:34 IST" duration-ms="20364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchVeryLongText()[pri:2, instance:negativetests.NegativeSearchTest@565f390]" started-at="2025-11-24T02:20:34 IST" name="searchVeryLongText" finished-at="2025-11-24T02:20:52 IST" duration-ms="18223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchVeryLongText -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@565f390]" started-at="2025-11-24T02:20:52 IST" name="tearDown" finished-at="2025-11-24T02:20:55 IST" duration-ms="2185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@565f390]" started-at="2025-11-24T02:20:55 IST" name="setUp" finished-at="2025-11-24T02:21:16 IST" duration-ms="21590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchEmptyInput()[pri:3, instance:negativetests.NegativeSearchTest@565f390]" started-at="2025-11-24T02:21:16 IST" name="searchEmptyInput" finished-at="2025-11-24T02:21:33 IST" duration-ms="17128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchEmptyInput -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@565f390]" started-at="2025-11-24T02:21:33 IST" name="tearDown" finished-at="2025-11-24T02:21:35 IST" duration-ms="1553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:negativetests.NegativeSearchTest@565f390]" started-at="2025-11-24T02:21:35 IST" name="setUp" finished-at="2025-11-24T02:21:56 IST" duration-ms="21507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchSpacesOnly()[pri:4, instance:negativetests.NegativeSearchTest@565f390]" started-at="2025-11-24T02:21:56 IST" name="searchSpacesOnly" finished-at="2025-11-24T02:22:11 IST" duration-ms="14968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchSpacesOnly -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:negativetests.NegativeSearchTest@565f390]" started-at="2025-11-24T02:22:11 IST" name="tearDown" finished-at="2025-11-24T02:22:13 IST" duration-ms="1534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- negativetests.NegativeSearchTest -->
+    </test> <!-- Negative Search Test -->
+  </suite> <!-- Wikipedia-NegativeTests -->
 </testng-results>
