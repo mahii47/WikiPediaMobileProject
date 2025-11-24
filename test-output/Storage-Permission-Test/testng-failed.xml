@@ -10,7 +10,7 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="WikipediaPermissionTest"/>
+          <include name="WikipediaDenyPermissionTest"/>
         </methods>
       </class> <!-- tests.PermissionTest -->
     </classes>

@@ -1,12 +1,19 @@
 package tests;
+import java.io.IOException;
 import org.testng.annotations.Test;
-import base.RegressionBaseTest;
+import base.BaseTest;
 import pages.PermissionPage;
 
-public class PermissionTest extends RegressionBaseTest {
+public class PermissionTest extends BaseTest {
 	
 	@Test
-	public void WikipediaPermissionTest() throws InterruptedException
+	public void WikipediaAllowPermissionTest() throws InterruptedException, IOException
+	{
+		PermissionPage permission = new PermissionPage(driver);
+		permission.verifyStoragePermissionAllowed();
+	}
+	@Test
+	public void WikipediaDenyPermissionTest() throws InterruptedException
 	{
 		PermissionPage permission = new PermissionPage(driver);
 		permission.verifyStoragePermissionDenied();

@@ -1,5 +1,4 @@
 package base;
-import java.net.MalformedURLException;
 import java.net.URL;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Reporter;
@@ -17,7 +16,7 @@ public class RegressionBaseTest {
 	private final String UDID = "T49P8X6LTG5DHE7H";
 	
 	@BeforeSuite(alwaysRun = true)
-	public void setUp() throws MalformedURLException, InterruptedException
+	public void setUp() throws Exception
 	{
 		DesiredCapabilities caps = CapabilitiesManager.getLauncherCapabilities(UDID);
 		driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),caps);
