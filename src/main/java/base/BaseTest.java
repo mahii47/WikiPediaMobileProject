@@ -43,6 +43,26 @@ public class BaseTest {
 			driver.quit();
 		}
 	}
+	 @AfterSuite(alwaysRun = true)
+	    public void suiteSummary() {
+
+	        int passed = Reporter.getCurrentTestResult().getTestContext().getPassedTests().size();
+	        int failed = Reporter.getCurrentTestResult().getTestContext().getFailedTests().size();
+	        int skipped = Reporter.getCurrentTestResult().getTestContext().getSkippedTests().size();
+	        int total = passed + failed + skipped;
+
+	        System.out.println("\n===============================================");
+	        System.out.println("        STORAGE-PERMISSION-TEST SUITE          ");
+	        System.out.println("===============================================");
+	        System.out.println("Total Tests Executed : " + total);
+	        System.out.println("Tests Passed         : " + passed);
+	        System.out.println("Tests Failed         : " + failed);
+	        System.out.println("Tests Skipped        : " + skipped);
+	        System.out.println("===============================================");
+	        System.out.println((failed == 0) ? "            ALL TESTS PASSED "
+	                : "            SOME TESTS FAILED ");
+	        System.out.println("===============================================\n");
+	    }
 	public void resetWikipediaApp() throws Exception {
 		Runtime.getRuntime().exec("adb shell pm reset-permissions");
 	    Thread.sleep(4000);

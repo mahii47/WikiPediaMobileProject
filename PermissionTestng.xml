@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Storage-Permission-Test">
+<suite name="Storage-Permission-Test" verbose="0" junit="false">
 <listeners>
         <listener class-name="listeners.ScreenshotListener"/>
     </listeners>
