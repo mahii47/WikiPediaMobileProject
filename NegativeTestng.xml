@@ -1,11 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
 <suite name="Wikipedia-NegativeTests" verbose="0" junit="false">
-<listeners>
+
+    <listeners>
         <listener class-name="listeners.ScreenshotListener"/>
     </listeners>
-    <test name="Negative Search Test">
+
+    <test name="Negative Search Tests">
         <classes>
             <class name="negativetests.NegativeSearchTest"/>
         </classes>
     </test>
+
 </suite>

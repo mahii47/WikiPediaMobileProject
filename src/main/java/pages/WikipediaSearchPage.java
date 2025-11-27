@@ -55,7 +55,7 @@ public class WikipediaSearchPage {
 		MobileElement searchResult = waitUtil.waitForVisible(searchSuggestion);
 		String result = searchResult.getText();
 		Assert.assertEquals(result, text);
-		System.out.println("Actual result is"+result);
-		System.out.println("Expected result is"+text);
+		System.out.println("Actual result is:"+result);
+		System.out.println("Expected result is:"+text);
 	}
 }

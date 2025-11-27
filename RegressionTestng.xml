@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
 <suite name="Regression Wikipedia Automation Suite" verbose="0" junit="false">
-<listeners>
+
+    <listeners>
         <listener class-name="listeners.ScreenshotListener"/>
     </listeners>
-    <test name=" Regression Wikipedia Tests">
+
+    <test name="Regression Tests">
         <classes>
-           <class name="tests.WikipediaSearchTest"/>
-           <class name="tests.ArticleTest"/>
+            <class name="tests.WikipediaSearchTest"/>
+            <class name="tests.ArticleTest"/>
         </classes>
     </test>
+
 </suite>
